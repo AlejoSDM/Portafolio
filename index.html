@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Proyecto</title>
+</head>
+<body>
+    <header>
+        <!--
+        Asi se hace un comentario
+        -->
+        <h1>Portafolio Alejandro Solano Duran</h1>
+        <nav>   
+            <ul>
+                <li><a href="#sobre-mi" target="_blank">SOBRE MI</a></li>
+                <li><a href="#Trayectoria" target="_blank">TRAYECTORIA</a></li>
+                <li><a href="#proyectos" target="_blank">PROYECTOS</a></li>
+                <li><a href="#Habilidades" target="_blank">HABILIDADES</a></li>
+                <li><a href="#conocimientos" target="_blank">CONOCIMIENTOS</a></li>
+                <li><a href="#formulario" target="_blank">INFORMACION DE CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <div>
+                <h2>Hola soy Alejandro Solano</h2>
+                <p>DEVELOPER</p>
+                <hr>
+                <p>Soy un desarrollador de python que maneja permanencia en archivos json</p> 
+                <button>MIS PROYECTOS</button>
+            </div>
+            <div>
+                <img src="/html_trabajos/img/punch.webp" 
+                alt="Imagen sobre mi" height="400px">
+            </div>
+        </section>
+        <hr>
+        <section id="Trayectoria">
+                <h2>Mi trayectoria</h2>
+                <hr>
+                <p>Llevo de estudio 2 semestres de ingenieria de sistemas en la Universidad Autonoma de Bucaramanga y 2 meses de estudio en Campusland Cajasan. <br>
+                    Tengo experiencia como tecnico en sistemas de impresoras, instalando sistemas y solucionando problemas</p> 
+            <div>
+                <img src="/html_trabajos/img/programando.png" 
+                alt="Imagen programando" height="400px">
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article id="Gestion de herramientas">
+                <div>
+                    <img src="/html_trabajos/img/herramientas.jpg" 
+                    alt="Gestion herramientas" height="400px">
+                </div>
+                <h3><a href="https://drive.google.com/file/d/1BJteGBIGSENL_DNLLbtuT_d3Aubm0Rll/view?pli=1" target="_blank">HERRAMIENTAS PARA EL BARRIO</a></h3>
+                <p>Trabajo realizado en <strong>Python</strong> modulado y con permanencias en <strong>JSON</strong> para la gestion de herramientas de un barrio <br>
+                permitiendo actualizar, editar, agregar y eliminar herramientas desde Administrador y poder agendarlas siendo un usuario.</p>
+                <h4>Como ejecutar el programa?</h4>
+                <p>Para ejecutar el programa debemos descargarlo desde el drive y descomprimirlo, abrir la carpeta en Visual Code o el programa que uses para ejecutar el codigo donde tengas instalado python y ejecutarlo </p>
+        </section>
+        <section id="Habilidades">
+            <hr>
+            <h2>TABLA MIS HABILIDADES</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Habilidades</th>
+                        <th>Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>    
+                        <td>Oratoria</td>
+                        <td>Se me da muy bien el expresar mis ideas en publico y
+                             mantener el foco en una conferencia</td>
+                    </tr>
+                    <tr>    
+                        <td>Resolucion de problemas</td>
+                        <td>Soy muy bueno resolviendo problemas,
+                             dando soluciones eficientes en poco tiempo y entregando buenos resultados</td>
+                    </tr>    
+                    <tr>    
+                        <td>Adaptabilidad</td>
+                        <td>Me considero una persona que se adapta facilmente con su entorno y sus retos trabajando bajo presion </td>
+                    </tr>   
+                    <tr>    
+                        <td>Trabajo en equipo</td>
+                        <td>Soy una persona buena para trabajar en equipo, proyectos, trabajos soy bueno asignando tareas,
+                            comunicandome con mis compañeros y asignando y realizando tareas</td>
+                    </tr>
+                </tbody>
+                <tfoot> 
+                    <td colspan="2">Gracias por leer</td>
+                </tfoot>
+            </table>
+        </section>
+        <section id="conocimientos">   
+            <h2>MIS CONOCIMIENTOS</h2>
+            <article>
+                <h3>BACKEND</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                </ul>
+            </article>
+            <article>
+                <h3>SERVIDORES Y BASE DE DATOS</h3>
+                <ul>
+                    <li>JSON</li>
+                    <li>Ubuntu Server Lamp</li>
+                </ul>
+            </article>
+        </section>
+        <section id="formulario">
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <form action="/tabla.html" method="post">
+                <label for="">Nombre:</label>
+                <input type="text">
+                <br>
+                <label for="">Edad:</label>
+                <input type="number" name="" id="">
+                <br>
+                <label for="">Inserte el archivo</label>
+                <input type="file">
+                <br>
+                <label for="">Correo:</label>
+                <input type="email" name="" id="" placeholder="Ingrese su correo">
+                <!--RADIO BUTTON
+                Permiten escojer solo 1 opcion siempre
+                y cuando se encuentren en la misma clase-->
+                <br>
+                <input type="radio" name="sexo" id="" value="m"> Masculino
+                <br>
+                <input type="radio" name="sexo" id="" value="f"> Femenino
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
