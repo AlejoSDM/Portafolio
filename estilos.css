@@ -1,1 +1,78 @@
+body{
+    background-color:rgb(49, 48, 48);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    h2{
+        font-size: 50px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
 
+header{
+    background-color: rgb(145, 255, 2);
+    color: black;
+    font-style:italic;
+    text-align: center;
+    nav ul li{
+        font-size: 30px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+}   
+
+#presentacion{
+    text-align: center;
+    font-style: italic;
+}
+
+#imagen-presentacion{
+    text-align: center;
+}
+#botoncito{
+}
+
+#proyectos{
+    border-style: groove;
+    width: 85%;
+    margin: 40px auto;
+    padding: 25px;
+}
+img {
+    padding: 10px;
+    border-style: groove;
+    margin: 20px;
+}
+img:hover{
+    border-color: rgb(145, 255, 2);
+}
+#habilidades{
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th{
+        font-size: 40px;
+    }
+    td{
+        font-size: 30px;
+    }
+}
+#conocimientos{
+    list-style-type: none;
+    font-size: 30px;
+}
+#formulario{
+    font-size: 50px;
+}

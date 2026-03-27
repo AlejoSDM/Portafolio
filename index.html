@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Proyecto</title>
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header>
         <!--
         Asi se hace un comentario
         -->
-        <h1>Portafolio Alejandro Solano Duran</h1>
+        <h2>BIENVENIDO</h2>
         <nav>   
             <ul>
                 <li><a href="#sobre-mi" target="_blank">SOBRE MI</a></li>
-                <li><a href="#Trayectoria" target="_blank">TRAYECTORIA</a></li>
+                <li><a href="#trayectoria" target="_blank">TRAYECTORIA</a></li>
                 <li><a href="#proyectos" target="_blank">PROYECTOS</a></li>
-                <li><a href="#Habilidades" target="_blank">HABILIDADES</a></li>
+                <li><a href="#habilidades" target="_blank">HABILIDADES</a></li>
                 <li><a href="#conocimientos" target="_blank">CONOCIMIENTOS</a></li>
                 <li><a href="#formulario" target="_blank">INFORMACION DE CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <main>
+       
         <section id="sobre-mi">
-            <div>
-                <h2>Hola soy Alejandro Solano</h2>
+            <div id="presentacion">
+                <h1>Hola soy Alejandro Solano</h1>
                 <p>DEVELOPER</p>
                 <hr>
-                <p>Soy un desarrollador de python que maneja permanencia en archivos json</p> 
+                <p>Soy un desarrollador de python que maneja permanencia en archivos json</p>
+                <div id="botoncito">
                 <button>MIS PROYECTOS</button>
+                </div>
             </div>
-            <div>
-                <img src="/html_trabajos/img/punch.webp" 
+            <div id="imagen-presentacion">
+                <img src="img/punch.webp" 
                 alt="Imagen sobre mi" height="400px">
             </div>
         </section>
         <hr>
-        <section id="Trayectoria">
+       
+        <section id="trayectoria">
                 <h2>Mi trayectoria</h2>
                 <hr>
                 <p>Llevo de estudio 2 semestres de ingenieria de sistemas en la Universidad Autonoma de Bucaramanga y 2 meses de estudio en Campusland Cajasan. <br>
                     Tengo experiencia como tecnico en sistemas de impresoras, instalando sistemas y solucionando problemas</p> 
             <div>
-                <img src="/html_trabajos/img/programando.png" 
+                <img src="img/programando.png" 
                 alt="Imagen programando" height="400px">
             </div>
         </section>
+       
         <section id="proyectos">
             <h2>Proyectos</h2>
             <article id="Gestion de herramientas">
                 <div>
-                    <img src="/html_trabajos/img/herramientas.jpg" 
+                    <img src="img/herramientas.jpg" 
                     alt="Gestion herramientas" height="400px">
                 </div>
                 <h3><a href="https://drive.google.com/file/d/1BJteGBIGSENL_DNLLbtuT_d3Aubm0Rll/view?pli=1" target="_blank">HERRAMIENTAS PARA EL BARRIO</a></h3>
@@ -60,7 +68,8 @@
                 <h4>Como ejecutar el programa?</h4>
                 <p>Para ejecutar el programa debemos descargarlo desde el drive y descomprimirlo, abrir la carpeta en Visual Code o el programa que uses para ejecutar el codigo donde tengas instalado python y ejecutarlo </p>
         </section>
-        <section id="Habilidades">
+       
+        <section id="habilidades">
             <hr>
             <h2>TABLA MIS HABILIDADES</h2>
             <table border="1">
@@ -96,9 +105,10 @@
                 </tfoot>
             </table>
         </section>
+       
         <section id="conocimientos">   
             <h2>MIS CONOCIMIENTOS</h2>
-            <article>
+            <article id="parte1">
                 <h3>BACKEND</h3>
                 <ul>
                     <li>Python</li>
@@ -106,7 +116,7 @@
                     <li>Java</li>
                 </ul>
             </article>
-            <article>
+            <article id="parte2">
                 <h3>SERVIDORES Y BASE DE DATOS</h3>
                 <ul>
                     <li>JSON</li>
@@ -114,6 +124,7 @@
                 </ul>
             </article>
         </section>
+       
         <section id="formulario">
             <h2>FORMULARIO DE CONTACTO</h2>
             <form action="/tabla.html" method="post">
