@@ -16,8 +16,8 @@
         <h2>BIENVENIDO</h2>
         <nav>   
             <ul>
+                <li><a href="#presentacion" target="_blank">PRESENTACION</a></li>
                 <li><a href="#sobre-mi" target="_blank">SOBRE MI</a></li>
-                <li><a href="#trayectoria" target="_blank">TRAYECTORIA</a></li>
                 <li><a href="#proyectos" target="_blank">PROYECTOS</a></li>
                 <li><a href="#habilidades" target="_blank">HABILIDADES</a></li>
                 <li><a href="#conocimientos" target="_blank">CONOCIMIENTOS</a></li>
@@ -27,12 +27,12 @@
     </header>
     <main>
        
-        <section id="sobre-mi">
-            <div id="presentacion">
+        <section id="presentacion">
+            <div id="presentacion-2">
                 <h1>ALEJANDRO SOLANO <br>DURAN</h1>
                 <p id="texto1">DEVELOPER</p>
                 <p>Soy un desarrollador de Python que maneja <br> permanencia en archivos JSON</p>
-                <button>MIS PROYECTOS</button>
+                <button><a href="#proyectos" target="_blank"> MIS PROYECTOS </a></button>
                 </div>
             </div>
             <div id="imagen-presentacion">
@@ -41,18 +41,21 @@
             </div>
         </section>
        
-        <section id="trayectoria">
-                <h2>TRAYECTORIA</h2>
-                <p>2 semestres de ingenieria de sistemas en la Universidad Autonoma de Bucaramanga y 2 meses de estudio en Campusland Cajasan. <br>
-                    Tengo experiencia como tecnico en sistemas de impresoras, instalando sistemas y resolucionando problemas</p> 
+        <section id="sobre-mi">
+                <h2>SOBRE MI</h2>
+                <p>Curse dos semestres de ingenieria de sistemas en la UNAB (UNIVERSIDAD AUTONOMA DE BUCARAMANGA) <br>
+                    actualmente soy estudiante de Campusland Cajasan, me defino como una persona comprometida, honesta,<br>
+                responsable con mis deberes, cumpliendo con habilidades para el trabajo en equipo y comunicacion <br>
+                con un enfoque proactivo para aprender</p> 
             <div>
                 <img src="img/programando.png" 
                 alt="Imagen programando" height="400px">
             </div>
         </section>
        
+        <div id="contenedor">
         <section id="proyectos">
-            <h2>PROYECTOS</h2>
+            <h2>PROYECTO</h2>
             <article id="Gestion de herramientas">
                 <div>
                     <img id="Imagen-herramientas" src="img/herramientas.jpg" 
@@ -64,7 +67,20 @@
                 <h4>Como ejecutar el programa?</h4>
                 <p>Para ejecutar el programa debemos descargarlo desde el drive y descomprimirlo, abrir la carpeta en Visual Code o el programa que uses para ejecutar el codigo donde tengas instalado python y ejecutarlo </p>
         </section>
-       
+
+        <section id="hoja"> 
+                <h2>HOJA DE VIDA</h2>
+            <article id="Hoja de vida">
+                <div>
+                    <img id="Icono documento" src="img/icono-documento.webp" 
+                    alt="Documento" height="400px">
+                </div>
+                <h3><a href="https://github.com/AlejoSDM/Hoja-de-vida.git" target="_blank">DESCARGAR HOJA DE VIDA</a></h3>
+                <p>Descarga de la hoja de vida que lo llevara a <strong>GitHub</strong></p>
+                <h4>Como descargar?</h4>
+                <p>Debes de entrar al link que te llevara al github donde se encuentra un repositorio con la hoja de vida donde solo debes de descargar el pdf </p>
+        </section>
+        </div>
         <section id="habilidades">
             <hr>
             <h2>TABLA MIS HABILIDADES</h2>
@@ -104,25 +120,31 @@
        
         <section id="conocimientos">   
             <h2>MIS CONOCIMIENTOS</h2>
+            <div id="conte">
             <article id="parte1">
                 <h3>BACKEND</h3>
                 <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Java</li>
+                    <li>PYTHON <img src="img/python-logo.jpeg" alt="logo python"></li>
+                    <li>JAVASCRIPT <img src="img/java-script.png" alt="logo js"></li>
+                    <li>JAVA <img src="img/java.png" alt="java logo"></li>
+                    <li>HTML <img src="img/HTML5.png" alt="html logo"></li>
+                    <li>CSS <img src="img/css.png" alt="CSS logo"></li>
                 </ul>
             </article>
             <article id="parte2">
                 <h3>SERVIDORES Y BASE DE DATOS</h3>
                 <ul>
-                    <li>JSON</li>
-                    <li>Ubuntu Server Lamp</li>
+                    <li>JSON <img src="img/json.png" alt="logo json"></li>
+                    <li>UBUNTU <img src="img/ubuntu.png" alt="ubuntu logo"></li>
+                    <li>LINUX <img src="img/linux logo.png" alt="linux logo"></li>
                 </ul>
             </article>
+        </div>
         </section>
-       
+        <hr>
         <section id="formulario">
             <h2>FORMULARIO DE CONTACTO</h2>
+            <div id="formu">
             <form action="/tabla.html" method="post">
                 <label for="">Nombre:</label>
                 <input type="text">
@@ -139,12 +161,17 @@
                 Permiten escojer solo 1 opcion siempre
                 y cuando se encuentren en la misma clase-->
                 <br>
+                <p>Seleccione su genero:</p>
+                <div id="genero">
                 <input type="radio" name="sexo" id="" value="m"> Masculino
                 <br>
                 <input type="radio" name="sexo" id="" value="f"> Femenino
                 <br>
+                </div>
                 <input type="submit" value="Enviar">
+                
             </form>
+            </div>
         </section>
 
     </main>

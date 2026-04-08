@@ -1,126 +1,229 @@
-body{
-    background-color:rgb(235, 222, 207);
-    color: rgb(0, 0, 0);
+body {
+    background-color: rgb(235, 222, 207);
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    h2{
-        font-size: 50px;
-    }
-    h1{
-        font-size: 80px;
-    }
-    }
-    h3{
-        font-size: 40px;
-    }
-    h4{
-        font-size: 30px;
-    }
-    p{
-        font-size: 30px;
-    }
-
-header{
-    background-color:rgb(101, 69, 51);
-    color: black;
-    font-style:italic;
-    font-weight: bold;
-    text-align: center;
-    h2{
-        padding-top: 40px;
-    }
-}   
-
-nav{
-    background-color: pink;
-    ul{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        list-style-type: none;
-        gap: 20px;
-        padding: 20px;
-        
-        a:hover{
-            color:white;
-        }
-        a{
-          text-decoration-color:rgb(167, 108, 76);
-          text-decoration-style:wavy;
-          color:black;
-          padding: 20px;
-        }
-    }
 }
 
-#sobre-mi{
+h1 { font-size: 80px; }
+h2 { font-size: 50px; }
+h3 { font-size: 40px; }
+h4 { font-size: 30px; }
+p  { font-size: 30px; }
+
+header {
+    background-color: rgb(101, 69, 51);
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+header h2 {
+    padding-top: 40px;
+}
+
+
+nav {
+    background-color: pink;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav ul a {
+    text-decoration-color: rgb(167, 108, 76);
+    text-decoration-style: wavy;
+    color: black;
+    padding: 20px;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+
+#presentacion {
     display: flex;
     justify-content: center;
 }
-#texto1{
+
+#texto1 {
     font-weight: bold;
 }
-#presentacion{
+
+#presentacion-2 {
     text-align: center;
     font-style: italic;
-    
 }
 
-#imagen-presentacion img{
+#imagen-presentacion img {
     border-radius: 200px;
-    justify-content: left;
 }
 
-#proyectos{
+#sobre-mi h2 {
+    font-style: italic;
+    border-style: groove;
+    padding: 40px;
+    background-color: rgb(101, 69, 51);
+}
+
+#proyectos, #hoja {
     border-style: groove;
     width: 45%;
     margin: 40px auto;
     padding: 25px;
-    h2{
-        border-style: groove;
-        background-color: rgb(101, 69, 51);
-        font-style: italic;
-    }
+}
 
-#Imagen-herramientas{
+#proyectos h2, #hoja h2 {
+    border-style: groove;
+    background-color: rgb(101, 69, 51);
+    font-style: italic;
+}
+
+#proyectos h3 a, #hoja h3 a {
+    text-decoration-color: rgb(167, 108, 76);
+    color: black;
+}
+
+#proyectos a:hover, #hoja a:hover {
+    color: white;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#Imagen-herramientas {
     border-radius: 50%;
     border-style: groove;
-    border-color: rgb(167, 108, 76);   
+    border-color: rgb(167, 108, 76);
 }
-}
+
 img {
     padding: 10px;
     border-style: groove;
     margin: 20px;
+    transition: all 0.3s ease;
 }
-img:hover{
+
+img:hover {
     border-color: rgb(159, 89, 49);
+    transform: scale(1.08) rotate(1deg);
 }
-#habilidades{
-    table {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    th{
-        font-size: 40px;
-    }
-    td{
-        font-size: 30px;
-    }
+
+#habilidades h2 {
+    border-style: groove;
+    background-color: rgb(101, 69, 51);
+    font-style: italic;
 }
-#conocimientos{
+
+#habilidades table {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#habilidades th {
+    font-size: 40px;
+}
+
+#habilidades td {
+    font-size: 30px;
+}
+
+
+#conocimientos {
     list-style-type: none;
     font-size: 30px;
 }
-#formulario{
-    font-size: 50px;
+
+#conocimientos h2 {
+    border-style: groove;
+    background-color: rgb(101, 69, 51);
+    font-style: italic;
 }
 
-#trayectoria{
-    h2{
-        font-style: italic;
-        border-style: groove;
-        padding: 40px;
-        background-color: rgb(101, 69, 51);
-    }
+/*Esto corresponde al la parte de mis conocimientos*/
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px
+}
+ul img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+#formulario {
+    font-size: 50px;
+}
+#formulario label {
+    font-size: 40px;
+}
+
+#formulario input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(101, 69, 51);
+    color: white;
+    font-size: 18px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#formulario input:hover{
+    background-color: rgb(167, 108, 76);
+    transform: scale(1.04);
+}
+
+#formu {
+    display: flex;
+    justify-content:center;
+}
+#formu p{
+    font-size: 40px;
+}
+
+#genero {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(101, 69, 51);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(167, 108, 76);
+    transform: scale(1.04);
 }
