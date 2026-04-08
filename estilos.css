@@ -17,10 +17,14 @@ header {
     font-style: italic;
     font-weight: bold;
     text-align: center;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-style:groove;
 }
 
 header h2 {
     padding-top: 40px;
+    text-align: center;
 }
 
 
@@ -195,6 +199,12 @@ ul img{
 #formu {
     display: flex;
     justify-content:center;
+    border-style:groove;
+    margin: 45px auto;
+    width: 35%;
+    border-color:rgb(181, 114, 75);
+    padding: 30px;
+    border-radius: 50px;
 }
 #formu p{
     font-size: 40px;
@@ -224,6 +234,14 @@ button a{
 }
 
 button:hover {
-    background-color: rgb(167, 108, 76);
+    background-color: rgb(c);
     transform: scale(1.04);
+}
+
+table {
+    width: 60%;
+}
+
+table tr th, tr td{
+    padding: 20px;
 }
