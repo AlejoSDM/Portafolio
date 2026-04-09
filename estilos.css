@@ -1,0 +1,290 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 { font-size: 80px; }
+h2 { font-size: 50px; }
+h3 { font-size: 40px; }
+h4 { font-size: 30px; }
+p  { font-size: 30px; }
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-style: groove;
+    border-color: rgb(212, 175, 55);
+}
+
+header h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav ul a {
+    text-decoration-color: rgb(212, 175, 55);
+    text-decoration-style: wavy;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+nav ul a:hover {
+    color: rgb(212, 175, 55);
+}
+
+#presentacion {
+    display: flex;
+    justify-content: center;
+}
+
+#texto1 {
+    font-weight: bold;
+}
+
+#presentacion-2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#imagen-presentacion img {
+    border-radius: 200px;
+    margin-top: 85px;
+}
+
+#sobre-mi h2 {
+    font-style: italic;
+    border-style: groove;
+    padding: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(212, 175, 55);
+}
+
+#collage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0% 30%;
+    padding: 10px;
+}
+#collage img {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border-style: none;
+}
+#collage img:hover {
+    border-color: rgb(212, 175, 55);
+    border-style: groove;
+    padding: 0%;
+    border-radius: 15%;
+    transform: scale(1.08) rotate(1deg);
+}
+#img1{
+    grid-column: span 2;
+    grid-row: span 2;
+    margin: auto;
+    width: auto;
+}
+
+#proyectos, #hoja {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-style: groove;
+    width: 45%;
+    padding: 25px;
+    border-color: rgb(212, 175, 55);
+}
+
+#hoja img{
+    background-color: rgb(255, 255, 255);
+}
+#proyectos h2, #hoja h2 {
+    border-style: groove;
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    border-color: rgb(212, 175, 55);
+}
+
+#proyectos h3 a, #hoja h3 a {
+    text-decoration-color: rgb(212, 175, 55);
+    color: rgb(20, 20, 20);
+}
+
+#proyectos a:hover, #hoja a:hover {
+    color: rgb(212, 175, 55);
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#Imagen-herramientas {
+    border-radius: 50%;
+    border-style: groove;
+    border-color: rgb(212, 175, 55);
+}
+
+img {
+    padding: 10px;
+    border-style: groove;
+    margin: 20px;
+    transition: all 0.3s ease;
+    border-color: rgb(220, 220, 220);
+}
+
+img:hover {
+    border-color: rgb(212, 175, 55);
+    transform: scale(1.08) rotate(1deg);
+}
+
+#habilidades h2 {
+    border-style: groove;
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    border-color: rgb(212, 175, 55);
+}
+
+#habilidades table {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#habilidades th {
+    font-size: 40px;
+}
+
+#habilidades td {
+    font-size: 30px;
+}
+
+#conocimientos {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+#conocimientos h2 {
+    border-style: groove;
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    border-color: rgb(212, 175, 55);
+}
+
+/* Esto corresponde a la parte de mis conocimientos */
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px
+}
+ul img{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+#formulario {
+    font-size: 50px;
+}
+#formulario label {
+    font-size: 40px;
+}
+
+#formulario input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+#formulario input:hover{
+    background-color: rgb(212, 175, 55);
+    color: rgb(20, 20, 20);
+    transform: scale(1.04);
+}
+
+#formu {
+    display: flex;
+    justify-content:center;
+    border-style:groove;
+    margin: 45px auto;
+    width: 35%;
+    border-color: rgb(212, 175, 55);
+    padding: 30px;
+    border-radius: 50px;
+}
+#formu p{
+    font-size: 40px;
+}
+
+#genero {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(212, 175, 55);
+    color: rgb(20, 20, 20);
+    transform: scale(1.04);
+}
+
+table {
+    width: 60%;
+}
+
+table tr th, tr td{
+    padding: 20px;
+}
